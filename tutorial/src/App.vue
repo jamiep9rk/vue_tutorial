@@ -2,12 +2,13 @@
 
 <template>
   <div>
+    <router-view />
     <!-- <nav>
       <RouterLink to="/">Home</RouterLink
       ><RouterLink to="/main">Main</RouterLink>
     </nav> -->
-    <main><RouterView></RouterView></main>
-    <!-- <LandingPage /> -->
+    <!-- <main><RouterView></RouterView></main>
+    <LandingPage /> -->
 
     <!-- <MainPage /> -->
     <!-- <div class="black-bg" v-if="modalOpen">
@@ -51,38 +52,39 @@
 //
 <script>
 // import HelloWorld from "./components/HelloWorld.vue";
-// import LandingPage from "./pages/LandingPage.vue";
+// import LandingPage from './pages/LandingPage.vue';
 // import MainPage from "./pages/MainPage.vue";
-// import LandingPage from ".pages/LandingPage.vue";
+// import LandingPage from '.pages/LandingPage.vue';
 // import oneroomData from "./assets/oneroom.js";
 
-// export default {
-//   name: "App",
-//   data() {
-//     return {
-//       modalOpen: false,
-//       reportNum: [0, 0, 0],
-//       menus: ["Home", "Shop", "About"],
-//       products: [
-//         { name: "역삼동 원룸", price: "90" },
-//         { name: "천호동 원룸", price: "60" },
-//         { name: "마포구 원룸", price: "85" },
-//       ],
-//       원룸들: oneroomData,
-//     };
-//   },
-//   methods: {
-//     increase() {
-//       this.reportNum += 1;
-//     },
-//   },
-//   computed: {},
-//   components: {
-//     LandingPage,
-//     MainPage,
-//     HelloWorld,
-//   },
-// };
+export default {
+  name: 'App',
+  //   data() {
+  //     return {
+  //       modalOpen: false,
+  //       reportNum: [0, 0, 0],
+  //       menus: ["Home", "Shop", "About"],
+  //       products: [
+  //         { name: "역삼동 원룸", price: "90" },
+  //         { name: "천호동 원룸", price: "60" },
+  //         { name: "마포구 원룸", price: "85" },
+  //       ],
+  //       원룸들: oneroomData,
+  //     };
+  //   },
+  //   methods: {
+  //     increase() {
+  //       this.reportNum += 1;
+  //     },
+  //   },
+  //   computed: {},
+  components: {
+    // eslint-disable-next-line vue/no-unused-components
+    // LandingPage,
+    //     MainPage,
+    //     HelloWorld,
+  },
+};
 //
 </script>
 
